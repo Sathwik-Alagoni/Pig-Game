@@ -6,7 +6,7 @@ A simple two-player dice game where players take turns rolling a dice, accumulat
 
 ## Live Demo
 
-Play the game live here: [Dice Game on Netlify](https://your-netlify-link.netlify.app)
+Play the game live here: [Dice Game on Netlify](https://pig-game-2-player.netlify.app)
 
 ---
 

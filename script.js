@@ -67,6 +67,8 @@ reset.addEventListener("click",function(){
     document.querySelector('.player--0').classList.add('player--active');
     document.querySelector('.player--1').classList.remove('player--active');
     document.querySelector('.player--0').classList.remove('player--winner');
+    rollDice.enabled = true;
+    hold.enabled = true;
     swapNumber = 0;
     currentScore=0;
     totalScore=[0,0];
