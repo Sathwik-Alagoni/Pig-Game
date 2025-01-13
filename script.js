@@ -58,18 +58,25 @@ hold.addEventListener("click",function(){
 });
 
 
-reset.addEventListener("click",function(){
+reset.addEventListener("click", function () {
     player1t.textContent = 0;
     player2t.textContent = 0;
     diceimg.classList.add('hidden');
     document.getElementById('current--0').textContent = 0;
     document.getElementById('current--1').textContent = 0;
+    
     document.querySelector('.player--0').classList.add('player--active');
     document.querySelector('.player--1').classList.remove('player--active');
     document.querySelector('.player--0').classList.remove('player--winner');
-    rollDice.disabled = false; // Enables the button
-    hold.disabled = false;     // Enables the button
+    document.querySelector('.player--1').classList.remove('player--winner');
+    
+ 
+    rollDice.disabled = false;
+    hold.disabled = false;
+    
+    
     swapNumber = 0;
-    currentScore=0;
-    totalScore=[0,0];
+    currentScore = 0;
+    totalScore = [0, 0];
 });
+
