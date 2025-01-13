@@ -22,7 +22,7 @@ function swap(){
     currentScore = 0;
 
     if(totalScore[swapNumber]>100){
-        document.querySelector('.player--0').classList.add('player--winner');
+        document.querySelector(`.player--${swapNumber}`).classList.add('player--winner');
         diceimg.classList.add('hidden');
         rollDice.disabled = true;
         hold.disabled = true;
@@ -67,8 +67,8 @@ reset.addEventListener("click",function(){
     document.querySelector('.player--0').classList.add('player--active');
     document.querySelector('.player--1').classList.remove('player--active');
     document.querySelector('.player--0').classList.remove('player--winner');
-    rollDice.enabled = true;
-    hold.enabled = true;
+    rollDice.disabled = false; // Enables the button
+    hold.disabled = false;     // Enables the button
     swapNumber = 0;
     currentScore=0;
     totalScore=[0,0];
